@@ -1,0 +1,3 @@
+[submodule "submodule/ProcedureKit"]
+	path = submodule/ProcedureKit
+	url = git@github.com:ProcedureKit/ProcedureKit.git
