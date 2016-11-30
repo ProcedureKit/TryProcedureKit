@@ -17,3 +17,14 @@ git checkout $PROCEDUREKIT_HASH
 
 echo "cd ../.."
 cd "../.."
+
+echo "bundle install --quiet"
+bundle install --quiet
+
+echo "--- CocoaPods"
+bundle exec pod install
+
+echo "--- Build & Test"
+
+echo "bundle exec xcodebuild -workspace TryProcedureKit.xcworkspace -scheme TryProcedureKit clean build test | xcpretty"
+bundle exec xcodebuild -workspace TryProcedureKit.xcworkspace -scheme TryProcedureKit clean build test | xcpretty
