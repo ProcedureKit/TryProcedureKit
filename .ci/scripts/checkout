@@ -5,5 +5,7 @@ set -euo pipefail
 [[ "$PROCEDUREKIT_HASH" == "change-me" ]] && echo "You need to set \$PROCEDUREKIT_HASH" && exit 1
 
 echo "--- :git: Updating submodule"
-
-echo "`pwd`"
+echo "cd submodules/ProcedureKit"
+cd "submodules/ProcedureKit"
+echo "git checkout $PROCEDUREKIT_HASH"
+git checkout $PROCEDUREKIT_HASH
