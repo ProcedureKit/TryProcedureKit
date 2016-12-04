@@ -1,0 +1,4 @@
+steps:
+  -
+    name: "Checkout"
+    command: "source /usr/local/opt/chruby/share/chruby/chruby.sh && chruby ruby  && .ci/scripts/checkout"
