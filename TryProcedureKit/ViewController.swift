@@ -25,6 +25,7 @@ class ViewController: NSViewController {
     }
 
     func getNetworkResource() {
+
         let procedure = NetworkProcedure { NetworkDataProcedure(session: URLSession.shared, request: URLRequest(url: "http://www.apple.com")) }
         procedure.log.severity = .info
         procedure.addDidFinishBlockObserver { procedure, error in

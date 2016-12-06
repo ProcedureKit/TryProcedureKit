@@ -9,6 +9,8 @@ PODS:
     - ProcedureKit/Standard
   - ProcedureKit/Location (4.0.0.beta.5):
     - ProcedureKit/Standard
+  - ProcedureKit/Mobile (4.0.0.beta.5):
+    - ProcedureKit/Standard
   - ProcedureKit/Network (4.0.0.beta.5):
     - ProcedureKit/Standard
   - ProcedureKit/Standard (4.0.0.beta.5)
@@ -19,6 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - ProcedureKit/All (from `submodules/ProcedureKit`)
+  - ProcedureKit/Mobile (from `submodules/ProcedureKit`)
   - TestingProcedureKit (from `submodules/ProcedureKit`)
 
 EXTERNAL SOURCES:
@@ -31,6 +34,6 @@ SPEC CHECKSUMS:
   ProcedureKit: 2be31143063e96aabf728e3460568816e93984ff
   TestingProcedureKit: 9d3b38f34a17ff41103a07c01b74e8a00288689e
 
-PODFILE CHECKSUM: 2a342b5104960648f7670de20b5402e4c8c42a3d
+PODFILE CHECKSUM: 79e68db8c6b522cd939bdae1f30aef14defb8005
 
 COCOAPODS: 1.1.1
