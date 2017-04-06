@@ -1,4 +1,6 @@
 steps:
   -
     name: "CocoaPods"
+    agents:
+      swift: 3.1
     command: "source /usr/local/opt/chruby/share/chruby/chruby.sh && chruby ruby  && .ci/scripts/cocoapods"
