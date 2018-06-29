@@ -1,22 +1,25 @@
 PODS:
-  - ProcedureKit (4.0.0):
-    - ProcedureKit/Standard (= 4.0.0)
-  - ProcedureKit/All (4.0.0):
+  - ProcedureKit (4.5.0):
+    - ProcedureKit/Standard (= 4.5.0)
+  - ProcedureKit/All (4.5.0):
     - ProcedureKit/Cloud
+    - ProcedureKit/CoreData
     - ProcedureKit/Location
     - ProcedureKit/Network
-  - ProcedureKit/Cloud (4.0.0):
+  - ProcedureKit/Cloud (4.5.0):
     - ProcedureKit/Standard
-  - ProcedureKit/Location (4.0.0):
+  - ProcedureKit/CoreData (4.5.0):
     - ProcedureKit/Standard
-  - ProcedureKit/Mobile (4.0.0):
+  - ProcedureKit/Location (4.5.0):
     - ProcedureKit/Standard
-  - ProcedureKit/Network (4.0.0):
+  - ProcedureKit/Mobile (4.5.0):
     - ProcedureKit/Standard
-  - ProcedureKit/Standard (4.0.0)
-  - TestingProcedureKit (4.0.0):
-    - TestingProcedureKit/Testing (= 4.0.0)
-  - TestingProcedureKit/Testing (4.0.0):
+  - ProcedureKit/Network (4.5.0):
+    - ProcedureKit/Standard
+  - ProcedureKit/Standard (4.5.0)
+  - TestingProcedureKit (4.5.0):
+    - TestingProcedureKit/Testing (= 4.5.0)
+  - TestingProcedureKit/Testing (4.5.0):
     - ProcedureKit
 
 DEPENDENCIES:
@@ -31,9 +34,9 @@ EXTERNAL SOURCES:
     :path: submodules/ProcedureKit
 
 SPEC CHECKSUMS:
-  ProcedureKit: 2af9335a002b5f2a2db61d9cfba0ab4bcac640cf
-  TestingProcedureKit: c895260046d02b324c1dfc8ecf83160fefc76360
+  ProcedureKit: 63b29824a3af7ce51a155c234d20309fe33f5e17
+  TestingProcedureKit: 8b4a0b89edb7e62d5da1d5a2673809873e387753
 
-PODFILE CHECKSUM: 79e68db8c6b522cd939bdae1f30aef14defb8005
+PODFILE CHECKSUM: 303b66d9803f2d5a486ea3b44c85c6b9f5104dec
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.3

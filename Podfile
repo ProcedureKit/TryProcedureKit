@@ -12,7 +12,7 @@ target 'TryProcedureKit' do
 end
 
 target 'TryProcedureKit iOS' do
-  platform :ios, '10'
+  platform :ios, '11.0'
   use_frameworks!
 
   pod 'ProcedureKit/All', :path => 'submodules/ProcedureKit'
