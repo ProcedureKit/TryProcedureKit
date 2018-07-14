@@ -14,7 +14,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        queue.add(operation: AsyncBlockProcedure { finishWithResult in
+        queue.addOperation(AsyncBlockProcedure { finishWithResult in
             DispatchQueue.default.async {
                 print("Hello world")
                 finishWithResult(success)
@@ -30,9 +30,9 @@ class ViewController: NSViewController {
         procedure.log.severity = .info
         procedure.addDidFinishBlockObserver { procedure, error in
             guard let result = procedure.output.success else { return }
-            procedure.log.info(message: "Received: \(result.response)")
+            procedure.log.info.message("Received: \(result.response)")
         }
-        queue.add(operation: procedure)
+        queue.addOperation(procedure)
     }
 }
 
